@@ -1,12 +1,13 @@
 package com.jj.spring.domain.posts;
 
-
+import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
+
 
 import javax.persistence.*;
-
+@Getter
 @NoArgsConstructor
 @Entity
 public class Posts {
@@ -30,4 +31,12 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+
+
 }
