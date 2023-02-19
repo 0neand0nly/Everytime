@@ -7,10 +7,10 @@ var main={
     });
     },
     save: function(){
-        var data=
-            title:$(#'title').val(),
-            author:$(#'author').val(),
-            content:$(#'content').val()
+        var data={
+            title:$('#title').val(),
+            author:$('#author').val(),
+            content:$('#content').val()
         };
     $.ajax({
         type: 'POST',
@@ -30,4 +30,5 @@ var main={
 
     }
 
-}
+};
+main.init();
