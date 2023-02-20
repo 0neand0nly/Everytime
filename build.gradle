@@ -32,8 +32,8 @@ dependencies {
 
     // lombok
     implementation('org.projectlombok:lombok')
-    implementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation ('org.junit.jupiter:junit-jupiter:5.8.2')
+    implementation ('org.springframework.boot:spring-boot-starter-test')
     annotationProcessor('org.projectlombok:lombok:1.18.20')
     testImplementation('org.projectlombok:lombok:1.18.20')
     testAnnotationProcessor('org.projectlombok:lombok:1.18.20')
